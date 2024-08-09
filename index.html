@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <img src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png" alt="Pokedex" >
+        </nav>
+   
+   
+    <div class="pokemon-imagen">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard">
+    </div>
+    <div class="pokemon-info"> 
+        <div class="nombre-contenedor">
+            <h2 class="pokemon-id">#006</h2>
+            <h2 class="pokemon-nombre"> Charizard</h2>
+            <h2 class="pokemon-peso">Peso= 905</h2>
+            <h2 class="pokemon-tipo">Fuego</h2>
+        </div>
+    <div class="container">
+        <div class="card--container">
+
+        </div>
+
+        <div id="pokemon-card" class="card">
+
+        </div>
+        
+        <div class="container-row">
+            <label for="pokemon-name"> Pokemon (Name/ID)</label>
+            <input id="pokemon-name" type="text" name="pokemon-name" value="" placeholder="Lugia"/>
+        </div>
+    </div>
     
+        <button class="btn-primary" id="prev-btn">Previous</button>
+        <button  class="btn-primary" id="get-btn">Get Pokemon</button>
+        <button class="btn-primary" id="next-btn">Next</button>
 
     <script src="fetch.js"></script>
+</header>
 </body>
 </html>

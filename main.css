@@ -1,0 +1,21 @@
+.nav img {
+    width: 150px; 
+    height: auto; 
+  }
+.pokemon-imagen img {
+    width: 200px;
+    height: auto; 
+    border: 5px solid #000; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   
+  }
+  
+.pokemon-info {
+    padding: 20px; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
