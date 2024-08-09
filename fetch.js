@@ -21,9 +21,8 @@ const fetchPokemon = async (pokemon) => {
         
         card.innerHTML = `
             <h1>${pokemon.name}</h1>
-            <h2> ID: ${Id}<h2>
-            <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
-            <p>Peso: ${pokemon.weight / 10} kg</p>
+            <h2> ID: ${Id} <h2>
+            <p>Peso: ${pokemon.weight / 905} kg</p>
             <p>Habilidad: ${abilities}</p>
         `
         return card;
@@ -69,8 +68,9 @@ const fetchPokemon = async (pokemon) => {
         },
         body: JSON.stringify({
             title: "Charizard",
-            body: "lorem ipsum",
+            peso: "905",
             userId: 6,
+            tipo:"Fuego",
         }),
     }).then(res => res.json())
     .then((data)=> console.log(data));
